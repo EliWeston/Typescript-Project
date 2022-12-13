@@ -1,0 +1,56 @@
+/* Input Classes */
+
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.input__box {
+  width: 50vw;
+  border-radius: 10px;
+  padding: 20px 50px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px var(--appblack);
+}
+
+.input__box:focus {
+  outline: none;
+}
+
+.input__submit {
+  position: absolute;
+  width: 5vw;
+  height: 6vh;
+  margin: 17.5vw;
+  border-radius: 12px;
+  right: 0px;
+  border: none;
+  font-size: 20px;
+  background-color: var(--appblue);
+  color: var(--appsilver);
+  transition: 0.2s all;
+  box-shadow: 0 0 10px app(--appblack);
+}
+
+.input__submit:focus {
+  background-color: var(--appteal);
+}
+
+.input__submit:active{
+  transform: scale(0.8);
+  box-shadow: 0 0 5px var(--appblack);
+}
+
+/* Todo Classes */
+
+.todos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}

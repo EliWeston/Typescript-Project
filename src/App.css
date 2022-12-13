@@ -1,1 +1,45 @@
+:root {
+  --appsilver: #ADACB5;
+  --appblue: #3c456b;
+  --apporange: #CF5C36;
+  --appteal: #0B7A75;
+  --appblack: #3A3335;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--appblue);
+}
+
+/* Text */
+
+.heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--appsilver);
+  z-index: 1;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .heading {
+    font-size: 35px;
+  }
+}
+
+/* Adjustment Classes */
+
+.mt-3 {
+  margin-top: 3vh;
+}
+@media (max-width: 800px) {
+  .mt-3 {
+    margin-top: 1.5vh;
+  }
+}
+
 
