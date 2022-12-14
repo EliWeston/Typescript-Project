@@ -12,7 +12,7 @@ const TodoList = ({ todos, setTodos }: Props) => {
   return (
     <div className='container'>
       <div className='todos'>
-        <span className="todos_heading">
+        <span className="todos__heading">
           Active Tasks
         </span>
         {
@@ -25,8 +25,8 @@ const TodoList = ({ todos, setTodos }: Props) => {
           ))
         }
       </div>
-      <div className='todos remove'>
-      <span className="todos_heading">
+      <div className='todos todos--completed'>
+      <span className="todos__heading--completed">
           Completed Tasks
         </span>
         {
