@@ -70,6 +70,8 @@
   align-items: flex-start;
 }
 
+/* Todos */
+
 .todos {
   display: flex;
   width: 45%;
@@ -93,6 +95,8 @@
   font-size: 30px;
   color: var(--appwhite);
 }
+
+/* Single Todo */
 
 .todos__single {
   display: flex;
@@ -143,4 +147,18 @@
   margin-left: 10px;
   font-size: 25px;
   cursor: pointer;
+}
+
+/* Drag Classes */
+
+.dragactive {
+  background-color: var(--apporange);
+}
+
+.dragcompleted {
+  background-color: var(--apporange);
+}
+
+.drag {
+  box-shadow: 0 0 20px var(--apporange);
 }
