@@ -62,29 +62,69 @@
 
 /* Todo Classes */
 
+.container {
+  display: flex;
+  width: 85%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Todos */
+
 .todos {
   display: flex;
-  justify-content:space-around;
-  width: 90%;
-  flex-wrap: wrap;
+  width: 45%;
+  flex-direction: column;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--appgrey);
 }
+
+.todos--completed {
+  background-color: var(--appblack)
+}
+
+.todos__heading {
+  font-size: 30px;
+  color: var(--appblack);
+}
+
+.todos__heading--completed {
+  font-size: 30px;
+  color: var(--appwhite);
+}
+
+/* Single Todo */
 
 .todos__single {
   display: flex;
   justify-content: space-evenly;
-  width: 35%;
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
   background-color: var(--appwhite);
+  transition: 0.2s;
+}
+
+.todos__single:hover {
+  box-shadow: 0 0 5px var(--appblack);
+  transform: scale(1.02);
+}
+
+.todos--completed .todos__single:hover {
+  box-shadow: 0 0 5px var(--appwhite);
 }
 
 @media (max-width: 800px) {
   .todos {
-    width: 75%;
+    width: 95%;
+    margin-bottom: 10px;
   }
-  .todos__single {
-    width: 100%;
+  .container {
+    width: 95%;
+    flex-direction: column;
   }
 }
 
@@ -94,9 +134,10 @@
   padding: 2px;
 }
 
-.todos__single--text:focus {
+.todos__single--text:focus-visible {
   outline: none;
 }
+
 
 .todos__icons {
   align-self: flex-end;
@@ -106,4 +147,18 @@
   margin-left: 10px;
   font-size: 25px;
   cursor: pointer;
+}
+
+/* Drag Classes */
+
+.dragactive {
+  background-color: var(--apporange);
+}
+
+.dragcompleted {
+  background-color: var(--apporange);
+}
+
+.drag {
+  box-shadow: 0 0 20px var(--apporange);
 }
